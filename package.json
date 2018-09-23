@@ -1,0 +1,24 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "> 感谢[技术胖](http://jspang.com/post/es6.html)用心创作的教程。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/index.js -o dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CourteousBin/ES6.git"
+  },
+  "author": "Bin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CourteousBin/ES6/issues"
+  },
+  "homepage": "https://github.com/CourteousBin/ES6#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
