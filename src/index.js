@@ -48,8 +48,95 @@
 	}
 	let arr=Array.from(json);
 	console.log(arr)
+
+
+	let arr=[1,2,3,4,5,6,7,8,9];
+	console.log(arr.find(function(value,index,arr){
+	    return value > 5;
+	}))
+ * 第8节：ES6中新增的数组知识（2）
+    let arr=['jspang','技术胖','大胖逼逼叨']
+	for (let [index,value] of arr.entries()){
+		console.log(index);
+	    console.log(value);
+	}
  */
-let arr=[1,2,3,4,5,6,7,8,9];
-console.log(arr.find(function(value,index,arr){
-    return value > 5;
-}))
+
+// let age = 18;
+// let name = 'bin';
+
+// let obj = {age,name};
+
+// console.log(obj);
+
+// let key='skill';
+// var obj={
+//     [key]:'web'
+// }
+// console.log(obj);
+// 
+// var a={a:'jspang'};
+// var b={b:'技术胖'};
+// var c={c:'web'};
+// let d=Object.assign(a,b,c)
+// console.log(d);
+// 
+// 
+// var obj={
+//     add:function(val){
+//         return val+10;
+//     },
+//     name:'I am Jspang'
+// };
+// let proFun = {
+// 	get:function(target,key){
+// 		console.log(target);
+// 		console.log(key);
+// 		return target[key]
+// 	},
+// 	set:function(target,key,value){
+// 		console.log(target);
+// 		console.log(key);
+// 		console.log(value);
+// 		return target[key] = value+'999';
+// 	}
+// }
+// let pro = new Proxy(obj,proFun);
+// pro.name = 'Bin';
+// console.log(pro.name);
+
+
+// const promise = new Promise(function(resolve,reject){
+// 	if ( 异步操作成功 ){
+// 	    resolve(value);
+// 	 } else {
+// 	    reject(error);
+// 	 }
+// })
+// 
+// 
+// function Point(x,y){
+// 	this.x = x;
+// 	this.y = y;
+// }
+// Point.prototype.toString = function(){
+// 	return '(' + this.x + ', ' + this.y + ')';
+// }
+// var p = new Point(1,2);
+
+// console.log(p.toString());
+
+//定义类
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  toString() {
+    return '(' + this.x + ', ' + this.y + ')';
+  }
+}
+
+let p = new Point(1,2);
+console.log(p.x);
